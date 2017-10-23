@@ -1,6 +1,3 @@
-import os
-import platform
-import re
 import nmap
 import json
 
@@ -23,19 +20,12 @@ def pi_search():
 
 	print ("---------------------------")
 
-def run():
-	pi_search()
-
-	if rpi_ip_list == []:
-		pi_search()
-
 def main():
 
 	if rpi_ip_list == []:
 		print ('Running nmap')
 		pi_search()
-	print ("HOST_VARS")
-
+		#need to do some works to display correctly
 
 if __name__ == "__main__":
     main()
