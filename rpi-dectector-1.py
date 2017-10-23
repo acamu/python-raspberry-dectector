@@ -1,3 +1,6 @@
+#import os
+#import platform
+#import re
 import nmap
 import json
 
@@ -17,6 +20,9 @@ def pi_search():
 	  item = nm[host]['addresses']
   	  if nm[host].hostname() == 'raspberrypi' :
             print (nm[host].hostname(),item)
+          if 'mac' in nm[host]['addresses']:
+            print('mac address found: {}'.format(nm[host]['addresses']))
+            print('vendor: {}'.format(nm[host]['vendor']))
 
 	print ("---------------------------")
 
@@ -25,7 +31,7 @@ def main():
 	if rpi_ip_list == []:
 		print ('Running nmap')
 		pi_search()
-		#need to do some works to display correctly
+
 
 if __name__ == "__main__":
     main()
