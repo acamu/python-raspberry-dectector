@@ -6,6 +6,7 @@ from : https://github.com/TranceCat/Raspberry-Pi-orchestration
 install pytho-pip
 
    sudo yum install python-pip
+   sudo pip install --upgrade pip
 
 install python nmap
 
