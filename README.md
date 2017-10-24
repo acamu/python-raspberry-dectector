@@ -24,7 +24,7 @@ from : https://github.com/TranceCat/Raspberry-Pi-orchestration
     sudo python detector-1.py
 
 
-# Thing to know
+# Things to know
 
 If you want the mac address you must be on the same lan than the raspberry otherwise you will retrieve only the IP.
 It's enough to connect to the pi :)
